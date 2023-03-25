@@ -209,7 +209,7 @@ function validationTextInputs() { // проверка на валидность 
         this.parentNode.getElementsByClassName('error-message')[0].style.display = 'block';
     }
 
-    if (this.name == 'Street' && /\W/.test(this.value)) {
+    if (this.name == 'Street' && /[^a-zA-Z0-9-\s]/.test(this.value)) {
         this.classList.remove('valid');
         this.classList.add('invalid');
         this.parentNode.getElementsByClassName('error-message')[0].style.display = 'block';
