@@ -1,0 +1,238 @@
+
+#bug-books-template{
+    display: none;
+}
+
+.bug-wrapper-bg {
+    box-sizing: border-box;
+    display: block;
+    position: fixed;
+    
+    top: 73px;
+    left: 0;
+
+    width: 100%;
+    height: 100%;
+    overflow-y: auto;
+
+    opacity: 0;
+    pointer-events: none; 
+    transition: 0.5s all; 
+    background: rgba(0,0,0,0.2); 
+}
+
+.bug-wrapper-bg.active {
+    opacity: 1; 
+    pointer-events: all; 
+    transition: 0.5s all;
+}
+
+.bug-wrapper-bg.active:hover {
+    cursor: pointer;
+}
+
+.bug-wrapper {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    right: 0;
+
+    min-width: 500px;
+    height: 420px;
+
+    overflow-y: scroll;
+
+    background: white;
+    box-shadow: -1px 1px 3px #5C6A79;
+    border-radius: 5px;
+}
+
+.bug-wrapper:hover {
+    cursor: default;
+}
+
+.bug-wrapper .order-books {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+    margin: 20px;
+
+    max-width: 514px;
+
+    gap: 25px 20px;
+}
+
+.bug-wrapper .order-books .book {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    width: 247px;
+
+    box-shadow: 0px 5px 3px rgba(53, 49, 84, 0.28);
+}
+
+.bug-wrapper .order-books .book img {
+    width: 106px;
+    height: 150px;
+
+    background: #EEECEC;
+   
+}
+
+.bug-wrapper .order-books .book .text-section {
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    justify-content: space-between;
+
+    max-width: 120px;
+    height: 100%;
+}
+
+.bug-wrapper .order-books .book .text-section .author-title-price {
+    display: flex;
+    flex-direction: column; 
+
+    gap: 5px;
+}
+
+.bug-wrapper .order-books .book .text-section p {
+    margin: 0;
+}
+
+.bug-wrapper .order-books .book .text-section .author {
+    font-family: 'Open Sans', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 14px;
+    
+    text-transform: capitalize;
+    
+    color: #5C6A79;
+}
+
+.bug-wrapper .order-books .book .text-section .title {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 13px;
+    line-height: 15px;
+    
+    color: #1C2A39;
+}
+
+.bug-wrapper .order-books .book .text-section .price {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 15px;
+
+    text-transform: uppercase;
+
+    color: #1C2A39;
+}
+
+.bug-wrapper .order-books .book .text-section button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    padding: 0;
+    margin-bottom: 5px;
+    height: 25px;
+    max-width: 110px;
+
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 10px;
+    line-height: 10px;
+
+    text-transform: uppercase;
+    
+    color: #c03333;
+
+    border: 1px solid #c03333;
+    border-radius: 2px;
+    background: none;
+}
+
+.bug-wrapper .order-books .book .text-section button:hover {
+    cursor: pointer;
+    background: #f7c8c8;
+}
+
+.bug-wrapper .order-books .book .text-section button:active {
+    background: #f87d7d;
+    border: none;
+}
+
+.bug-wrapper .total-confirm {
+    position: sticky;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 1;
+
+    bottom: 0;
+
+    padding: 10px 20px 15px 20px;
+
+    background: white;
+}
+
+.bug-wrapper .total-confirm a {
+    text-decoration: none;
+}
+
+.bug-wrapper .total-confirm button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    padding: 0;
+    height: 45px;
+    width: 176px;
+
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 12px;
+
+    text-transform: uppercase;
+    
+    color: #4C3DB2;
+
+    border: 1px solid #4C3DB2;
+    border-radius: 2px;
+    background: none;
+}
+
+.bug-wrapper .total-confirm button:hover {
+    cursor: pointer;
+    background: #d6d2fa;
+}
+
+.bug-wrapper .total-confirm button:active {
+    background: #a398eb;
+    border: none;
+}
+
+.bug-wrapper .total-confirm .total {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 15px;
+
+    text-transform: uppercase;
+}
+
+.bug-wrapper .total-confirm .total span {
+    font-weight: 900;
+}
+
