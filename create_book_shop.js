@@ -209,7 +209,7 @@ head_content.innerHTML = (`
     <link rel="stylesheet" type="text/css" href="books.css">
     <link rel="stylesheet" type="text/css" href="bug.css">
 
-    <link type="image/x-icon" href="favicon.ico">
+    
 `);
 
 document.getElementById('doc').appendChild(header);
