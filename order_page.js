@@ -264,6 +264,8 @@ function enableSubmitButton () { // функция активации кнопк
 
     if (validNumber == validation_input.length) {
         completeButton.disabled = false;
+    } else {
+      completeButton.disabled = true;
     }
 }
 

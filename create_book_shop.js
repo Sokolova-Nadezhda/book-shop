@@ -191,9 +191,11 @@ button_confirm_order.appendChild(button_confirm_order_text);
 
 var script_popup_book = document.createElement('SCRIPT');
 script_popup_book.setAttribute('src', 'popup_book.js');
+script_popup_book.setAttribute('defer', true);
 
 var script_bug = document.createElement('SCRIPT');
 script_bug.setAttribute('src', 'bug.js');
+script_bug.setAttribute('defer', true);
 
 
 
