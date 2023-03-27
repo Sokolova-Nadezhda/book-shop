@@ -197,8 +197,6 @@ var script_bug = document.createElement('SCRIPT');
 script_bug.setAttribute('src', 'bug.js');
 script_bug.setAttribute('defer', true);
 
-
-
 var head_content = document.createElement('DIV');
 head_content.innerHTML = (`
     <meta charset="UTF-8" />
@@ -211,7 +209,7 @@ head_content.innerHTML = (`
     <link rel="stylesheet" type="text/css" href="books.css">
     <link rel="stylesheet" type="text/css" href="bug.css">
 
-    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico">
 `);
 
 
