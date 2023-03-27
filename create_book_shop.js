@@ -211,7 +211,7 @@ head_content.innerHTML = (`
     <link rel="stylesheet" type="text/css" href="books.css">
     <link rel="stylesheet" type="text/css" href="bug.css">
 
-    <link rel="icon" type="image/x-icon" href="https://sokolova-nadezhda.github.io/book-shop/favicon.ico">
+    <link rel="icon" type="image/x-icon" href="/favicon.ico">
 `);
 
 
