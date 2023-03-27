@@ -193,9 +193,9 @@ var script_popup_book = document.createElement('SCRIPT');
 script_popup_book.setAttribute('src', 'popup_book.js');
 script_popup_book.setAttribute('defer', '');
 
-var script_bug = document.createElement('SCRIPT');
-script_bug.setAttribute('src', 'bug.js');
-script_bug.setAttribute('defer', '');
+// var script_bug = document.createElement('SCRIPT');
+// script_bug.setAttribute('src', 'bug.js');
+// script_bug.setAttribute('defer', '');
 
 
 const meta1 = document.createElement('meta');
@@ -244,7 +244,7 @@ link5.setAttribute('href', 'images/favicon.ico');
 document.getElementById('doc').appendChild(header);
 document.getElementById('doc').appendChild(main);
 document.getElementById('doc').appendChild(script_popup_book);
-document.getElementById('doc').appendChild(script_bug);
+// document.getElementById('doc').appendChild(script_bug);
 
 //--------------DOCUMENT-FRAGMENT---------------------------
 
