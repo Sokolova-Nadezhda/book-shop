@@ -169,6 +169,7 @@ document.addEventListener('click', (e) => { // Вешаем обработчик
     }
 });
 
+//---------BUG----------------------------------------------------
 
 let bugBg = document.querySelector('.bug-wrapper-bg'); // Фон попап окна
 let Bug = document.querySelector('.bug-wrapper'); // Само окно
