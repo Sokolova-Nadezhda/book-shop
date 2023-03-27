@@ -197,22 +197,49 @@ var script_bug = document.createElement('SCRIPT');
 script_bug.setAttribute('src', 'bug.js');
 script_bug.setAttribute('defer', true);
 
-// var head_content = document.createElement('DIV');
-// head_content.innerHTML = (`
-//     <meta charset="UTF-8" />
-//     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-//     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-//     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-//     <title>Book-Shop</title>
-//     <link rel="stylesheet" type="text/css" href="general.css">
-//     <link rel="stylesheet" type="text/css" href="header.css">
-//     <link rel="stylesheet" type="text/css" href="books.css">
-//     <link rel="stylesheet" type="text/css" href="bug.css">
 
-//     <link rel="icon" type="image/x-icon" href="images/favicon.ico">
-// `);
+const meta1 = document.createElement('meta');
+meta1.setAttribute('charset', 'UTF-8');
 
+const meta2 = document.createElement('meta');
+meta2.setAttribute('http-equiv', 'X-UA-Compatible');
+meta2.setAttribute('content', 'IE=edge');
 
+const meta3 = document.createElement('meta');
+meta3.setAttribute('name', 'viewport');
+meta3.setAttribute('content', 'width=device-width, initial-scale=1.0');
+
+const meta4 = document.createElement('meta');
+meta4.setAttribute('name', 'viewport');
+meta4.setAttribute('content', 'width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no');
+
+const title_head = document.createElement('title');
+title_head.textContent = 'Book-Shop';
+
+const link1 = document.createElement('link');
+link1.setAttribute('rel', 'stylesheet');
+link1.setAttribute('type', 'text/css');
+link1.setAttribute('href', 'general.css');
+
+const link2 = document.createElement('link');
+link2.setAttribute('rel', 'stylesheet');
+link2.setAttribute('type', 'text/css');
+link2.setAttribute('href', 'header.css');
+
+const link3 = document.createElement('link');
+link3.setAttribute('rel', 'stylesheet');
+link3.setAttribute('type', 'text/css');
+link3.setAttribute('href', 'books.css');
+
+const link4 = document.createElement('link');
+link4.setAttribute('rel', 'stylesheet');
+link4.setAttribute('type', 'text/css');
+link4.setAttribute('href', 'bug.css');
+
+const link5 = document.createElement('link');
+link5.setAttribute('rel', 'icon');
+link5.setAttribute('type', 'image/x-icon');
+link5.setAttribute('href', 'images/favicon.ico');
 
 document.getElementById('doc').appendChild(header);
 document.getElementById('doc').appendChild(main);
@@ -226,22 +253,17 @@ var head = document.head;
 
 var fragment = document.createDocumentFragment(); // создание фрагмента документа
 
-
-
-// fragment.innerHTML = (head_content);
-head.innerHTML = `
-<meta charset="UTF-8" />
-<meta http-equiv="X-UA-Compatible" content="IE=edge" />
-<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-<title>Book-Shop</title>
-<link rel="stylesheet" type="text/css" href="general.css">
-<link rel="stylesheet" type="text/css" href="header.css">
-<link rel="stylesheet" type="text/css" href="books.css">
-<link rel="stylesheet" type="text/css" href="bug.css">
-
-<link rel="icon" type="image/x-icon" href="images/favicon.ico">
-`;
+fragment.appendChild(meta1);
+fragment.appendChild(meta2);
+fragment.appendChild(meta3);
+fragment.appendChild(meta4);
+fragment.appendChild(title_head);
+fragment.appendChild(link1);
+fragment.appendChild(link2);
+fragment.appendChild(link3);
+fragment.appendChild(link4);
+fragment.appendChild(link5);
+head.appendChild(fragment);
 
 fragment.appendChild(document.getElementById('doc'));
 body.appendChild(fragment);
