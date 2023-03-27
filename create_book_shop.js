@@ -189,13 +189,9 @@ total_confirm_link.appendChild(button_confirm_order);
 var button_confirm_order_text = document.createTextNode((new String("Confirm order")));
 button_confirm_order.appendChild(button_confirm_order_text);
 
-var script_popup_book = document.createElement('SCRIPT');
-script_popup_book.setAttribute('src', 'popup_book.js');
-script_popup_book.setAttribute('defer', '');
-
-// var script_bug = document.createElement('SCRIPT');
-// script_bug.setAttribute('src', 'bug.js');
-// script_bug.setAttribute('defer', '');
+var script_book_shop = document.createElement('SCRIPT');
+script_book_shop.setAttribute('src', 'book_shop.js');
+script_book_shop.setAttribute('defer', '');
 
 
 const meta1 = document.createElement('meta');
@@ -243,8 +239,8 @@ link5.setAttribute('href', 'images/favicon.ico');
 
 document.getElementById('doc').appendChild(header);
 document.getElementById('doc').appendChild(main);
-document.getElementById('doc').appendChild(script_popup_book);
-// document.getElementById('doc').appendChild(script_bug);
+document.getElementById('doc').appendChild(script_book_shop);
+
 
 //--------------DOCUMENT-FRAGMENT---------------------------
 
