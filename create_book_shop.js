@@ -197,20 +197,20 @@ var script_bug = document.createElement('SCRIPT');
 script_bug.setAttribute('src', 'bug.js');
 script_bug.setAttribute('defer', true);
 
-var head_content = document.createElement('DIV');
-head_content.innerHTML = (`
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-    <title>Book-Shop</title>
-    <link rel="stylesheet" type="text/css" href="general.css">
-    <link rel="stylesheet" type="text/css" href="header.css">
-    <link rel="stylesheet" type="text/css" href="books.css">
-    <link rel="stylesheet" type="text/css" href="bug.css">
+// var head_content = document.createElement('DIV');
+// head_content.innerHTML = (`
+//     <meta charset="UTF-8" />
+//     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+//     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+//     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+//     <title>Book-Shop</title>
+//     <link rel="stylesheet" type="text/css" href="general.css">
+//     <link rel="stylesheet" type="text/css" href="header.css">
+//     <link rel="stylesheet" type="text/css" href="books.css">
+//     <link rel="stylesheet" type="text/css" href="bug.css">
 
-    <link rel="icon" type="image/x-icon" href="images/favicon.ico">
-`);
+//     <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+// `);
 
 
 
@@ -226,8 +226,22 @@ var head = document.head;
 
 var fragment = document.createDocumentFragment(); // создание фрагмента документа
 
-fragment.appendChild(head_content);
-head.appendChild(fragment);
+
+
+// fragment.innerHTML = (head_content);
+head.innerHTML = `
+<meta charset="UTF-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+<title>Book-Shop</title>
+<link rel="stylesheet" type="text/css" href="general.css">
+<link rel="stylesheet" type="text/css" href="header.css">
+<link rel="stylesheet" type="text/css" href="books.css">
+<link rel="stylesheet" type="text/css" href="bug.css">
+
+<link rel="icon" type="image/x-icon" href="images/favicon.ico">
+`;
 
 fragment.appendChild(document.getElementById('doc'));
 body.appendChild(fragment);
